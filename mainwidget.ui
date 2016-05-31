@@ -16,15 +16,15 @@
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>110</y>
-     <width>203</width>
-     <height>83</height>
+     <x>52</x>
+     <y>100</y>
+     <width>286</width>
+     <height>50</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QLabel" name="ip_label">
         <property name="text">
@@ -33,18 +33,18 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="ip_lineEdit"/>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
        <widget class="QLabel" name="port_label">
         <property name="text">
          <string>port</string>
         </property>
        </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="ip_lineEdit"/>
       </item>
       <item>
        <widget class="QLineEdit" name="port_lineEdit"/>
@@ -52,28 +52,11 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>connect</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <widget class="QPushButton" name="connect_pushButton">
+      <property name="text">
+       <string>connect</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

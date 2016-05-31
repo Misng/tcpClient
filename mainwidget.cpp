@@ -12,7 +12,7 @@ MainWidget::MainWidget(QWidget *parent) :
         //连接套接字对象的两个信号槽，一个为可读的时候，可以出错的时候。
         connect(socket,SIGNAL(readyRead()),SLOT(readMessage()));
         connect(socket,SIGNAL(error(QAbstractSocket::SocketError)),SLOT(displayError(QAbstractSocket::SocketError)));
-        connect(ui->pushButton,SIGNAL(clicked()),this,SLOT(newConnect()));
+        connect(ui->connect_pushButton,SIGNAL(clicked()),this,SLOT(newConnect()));
 }
 
 MainWidget::~MainWidget()
