@@ -21,12 +21,12 @@ private slots:
         void newConnect();
         void readMessage();
         void displayError(QAbstractSocket::SocketError);
+        void sendMessage();
         
 private:
         Ui::MainWidget *ui;
-        QTcpSocket * socket;
         QString message;//存放从服务器中接收到的字符串
-        quint16 blocksize;//存放字符串的大小
+        QTcpSocket * socket;
 };
 
 #endif // MAINWIDGET_H
